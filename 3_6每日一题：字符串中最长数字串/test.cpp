@@ -27,11 +27,11 @@ int main(){
 		while (it != str.end()&&(!IsNum(*it))){
 			it++;
 		}
-		if (it == str.end()){
-			cout << "" << endl;
-			system("pause");
-			return 0;
-		}
+		//if (it == str.end()){
+		//	cout << "" << endl;
+		//	system("pause");
+		//	return 0;
+		//}
 		nustr = it;
 		while (nustr != str.end()&&IsNum(*nustr)){
 			nustr++;
