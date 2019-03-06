@@ -1,3 +1,5 @@
+
+#if 0
 #include<iostream>
 #include<vector>
 #include<string>
@@ -59,6 +61,33 @@ int main(){
 		if (maxstr == array[i].size()){
 			cout << array[i] << endl;
 		}
+	}
+	system("pause");
+	return 0;
+}
+#endif
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+
+int main(){
+	int input;
+	vector<int> array;
+	while (cin >> input){
+		array.push_back(input);
+	}
+	if (!array.empty()){
+		sort(array.begin(), array.end());
+		int result = 0;
+		if (array.size() % 2 == 0){
+			result = array[(array.size() - 1) / 2];
+		}
+		else{
+			result = array[array.size() / 2];
+		}
+		cout << result << endl;
 	}
 	system("pause");
 	return 0;
